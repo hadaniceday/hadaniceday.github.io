@@ -2,5 +2,6 @@ node_modules
 out
 npm-debug.log
 .jekyll-metadata
+.sass-cache
 .idea
 _site

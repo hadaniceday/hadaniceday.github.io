@@ -11,6 +11,13 @@
 <body>
 <h1>Hello World!</h1>
 <button class="foo-button mdc-button">Button</button>
+<ul>
+    {% for post in site.posts %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
 <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
 <script>mdc.ripple.MDCRipple.attachTo(document.querySelector('.foo-button'));</script>
 </body>
